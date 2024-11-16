@@ -5,23 +5,17 @@ import edu.upc.dsa.models.PuntoInteres;
 import edu.upc.dsa.models.Usuario;
 
 import java.util.List;
+import java.util.Set;
 
 public interface Manager {
-    //usuarios:
-    public Usuario addUsuario(String id, String nom, String cognoms, String correu, String dataNaixement);//POST {usuario}
-    public List<Usuario> listarUsuarios();//GET all
-    public String consultarUsuario(String id);//GET {id}
-    public void usuarioPuntoInteres(String id, int x, int y);//GET {id, x, y}
-    public void listarUsuariosPunto(int x, int y); //GET{x, y}
-
-
-    //punto interes:
-    public PuntoInteres addPuntoInteres(ElementType elementType, int x, int y);//POST {punto}
-    public void consultarPuntos(Usuario usuario); //GET {usuario}
-    public void listarPuntosElementType(ElementType elementType);//GET {elementType}
-
-
-    //altres:
+    public Usuario addUsuario(String id, String nom, String cognoms, String correu, String dataNaixement);
+    public List<Usuario> listarUsuarios();
+    public Usuario consultarUsuario(String id);
+    public int usuarioPuntoInteres(String id, int x, int y);
+    public Set<Usuario> listarUsuariosPunto(int x, int y);
+    public PuntoInteres addPuntoInteres(ElementType elementType, int x, int y);
+    public List<PuntoInteres> consultarPuntos(String id);
+    public String listarPuntosElementType(ElementType elementType);
     public void clear();
     public int sizeUsuarios();
     public int sizePuntos();

@@ -1,7 +1,11 @@
-- PARTE 1:
-1: practicamente todo, falta un detalle en el de "Registrar que un usuario pasa por un punto de interés, identificándolo con el id del usuario y la posición del punto de interés"
-2:interfaz hecha
-3:fachada y singleton implementados. log también implementado (puede que falte algún detalle pero creo que no)
-4: empezado pero falta más de la mitad de los tests
+- PART 1:
+1:Complet. En lloc d'utilitzar List per a guardar els Punts dins d'un Usuari s'ha canviat a Set.
 
--PARTE 2: a medias
+2:Complet. Cap canvi excepte per adaptar-ho a la PART 2 (en lloc de retornar voids retorna l'element necessari)
+
+3:Complet. Afegit el Registre d'usuaris que passen per el punt (l'únic que faltava).
+Canvis per adaptar-ho a la PART 2.
+
+4: Complet. Afegit els tests que faltaven.
+
+-PART 2: Completa. S'han afegit els que faltaven (i esborrat el que estaba duplicat)
